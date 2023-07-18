@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header {
+  align-content: center;
+  background-color: black;
+  padding: 3% 3%;
+  width: 100%;
+  height: 200px;
+}
+.header_guitar-name {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.header_guitar-name_name {
+  color: white;
+  font-family: "Folkner", sans-serif;
+  font-weight: normal;
+  font-size: 100px;
+  transition: 200ms;
+}
+.header_guitar-name_name:hover {
+  color: chocolate;
+}
+.header_guitar-name_guitar {
+  width: 100px;
+  transition: 200ms;
+}
+.header_guitar-name_guitar:hover {
+  scale: 1.1;
+}
+.header_menu {
+  border-bottom: 4px solid chocolate;
+  border-radius: 3px;
+  transition: 200ms;
+  margin: auto;
+}
+.header_menu_items {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.header_menu_items_item {
+  padding: 5px 5px;
+  color: white;
+  list-style: none;
+  font-family: "Folkner", sans-serif;
+  transition: 200ms;
+  font-size: 30px;
+}
+.header_menu_items_item:hover {
+  scale: 1.1;
+  color: chocolate;
+  border-bottom: 8px solid chocolate;
+}
+.header_btn-menu {
+  display: none;
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+  }
+  .header_guitar-name {
+    border: 1px solid black;
+    display: flex;
+  }
+  .header_guitar-name_name {
+    font-size: 27px;
+  }
+  .header_guitar-name_guitar {
+    width: 40px;
+  }
+  .header_menu_items {
+    display: none;
+  }
+  .header_btn-menu {
+    display: block;
+    justify-content: right;
+    border: 1px solid black;
+    margin-right: 5%;
+  }
+  .header_btn-menu-icon {
+    width: 20px;
+  }
+  .header_btn-menu-icon:hover {
+    cursor: pointer;
+  }
+}
+
+.main {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 5% 5%;
+}
+.main_principal {
+  border-radius: 15px;
+  background-color: rgba(156, 152, 149, 0.247);
+  width: 70%;
+  font-size: large;
+}
+.main_principal_titulo-principal {
+  text-align: center;
+  font-size: large;
+  padding: 10px 10px;
+}
+.main_principal_parrafo-principal {
+  text-align: center;
+  padding: 10px 10px;
+}
+.main_principal_imagen-principal {
+  border-radius: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+.main_principal_songlist {
+  padding: 3%;
+  display: block;
+}
+.main_principal_songlist_song {
+  list-style: decimal;
+  margin: auto;
+  text-align: center;
+  list-style-position: inside;
+}
+.main_principal_player {
+  padding: 1% 5%;
+}
+@media (max-width: 500px) {
+  .main_principal {
+    width: 100%;
+  }
+}
+
+.footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 5%;
+}
+
+@font-face {
+  font-family: "Folkner";
+  src: url("fonts/Folkner Stamp.otf") format("opentype");
+}
+
+/*# sourceMappingURL=styles.css.map */

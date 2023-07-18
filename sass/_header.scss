@@ -1,0 +1,95 @@
+
+.header{
+    align-content: center;
+    background-color: black;
+    padding: 3% 3%;
+    width: 100%;
+    height: 200px;
+    &_guitar-name{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        &_name{
+            color: white;
+            font-family: 'Folkner', sans-serif;
+            font-weight: normal;
+            font-size: 100px;
+            transition: 200ms;
+            &:hover{
+                color: chocolate;
+            }
+        }
+        &_guitar{
+            width: 100px;
+            transition: 200ms;
+            &:hover{
+                scale: (1.1);
+            }
+        }
+    }
+    &_menu{
+        border-bottom: 4px solid chocolate;
+        border-radius: 3px;
+        transition: 200ms;
+        margin: auto;
+        &_items{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            &_item{
+                padding: 5px 5px;
+                color: white;
+                list-style: none;
+                font-family: 'Folkner', sans-serif;
+                transition: 200ms;
+                font-size: 30px;
+                &:hover{
+                    scale: (1.1);
+                    color: chocolate;
+                    border-bottom: 8px solid chocolate;
+                }
+            }
+        }
+
+    }
+    &_btn-menu{
+        display: none;
+    }
+    @media (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+        &_guitar-name{
+        border: 1px solid black;
+            display: flex;
+        &_name{
+            font-size: 27px;
+        }
+        &_guitar{
+            width: 40px;
+        }
+    }
+    &_menu{
+        &_items{
+            display: none;
+        }
+    } 
+    &_btn-menu{
+        display: block;
+        justify-content: right;
+        border: 1px solid black;
+        margin-right: 5%;
+        &-icon{
+            width: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    } 
+    }
+    
+}
